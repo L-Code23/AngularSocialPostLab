@@ -1,0 +1,9 @@
+<p>social-post works!</p>
+<app-post-form></app-post-form>
+<app-single-post></app-single-post>
+
+<h2>Post</h2>
+@for (i of allPost; track $index) {
+    <app-social-post (CreatedEvent)="onsubmit()" [newPost]="i"></app-social-post>
+}
+<app-social-post ></app-social-post>
